@@ -66,7 +66,7 @@ const ifInvalidShowError = (input, index) => {
     case 'passwordConfirmation':
       // If empty
       if (input.validity.valueMissing) {
-        allSpans[index].textContent = 'Please comfirm your password.';
+        allSpans[index].textContent = 'Please confirm your password.';
       } else if (input.value !== allInputs[index - 1].value) {
         allSpans[index].textContent = 'Passwords do not match!';
       } else {
