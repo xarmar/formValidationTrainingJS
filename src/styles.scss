@@ -1,0 +1,46 @@
+body {
+  background-color: bisque;
+}
+
+#mainForm {
+  margin-top: 20vh;
+  fieldset {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    max-width: fit-content;
+  }
+  label {
+    margin-top: 10px;
+  }
+  input,
+  select {
+    border: 2px solid transparent;
+    margin: 10px 0px 5px 0px;
+    &:valid {
+      background-color: rgba(172, 255, 47, 0.474);
+    }
+  }
+  span {
+    margin: 5px 0px 5px 0px;
+    font-size: 85%;
+    background-color: pink;
+    max-width: fit-content;
+  }
+  .valid {
+    background-color: yellowgreen !important;
+  }
+  button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: yellowgreen;
+    &:hover {
+      cursor: pointer;
+      background-color: greenyellow;
+    }
+  }
+}

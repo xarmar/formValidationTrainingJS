@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  <script defer src="bundle.js"></script></head>
+  <body>
+    <div id="formContainer">
+      <form action="" id="mainForm" novalidate>
+        <fieldset>
+          <legend>Example Form:</legend>
+          <label for="email"> Your Email Address</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="john@example.com"
+            pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
+            required
+          />
+          <span></span>
+          <label for="country">Your Country:</label>
+          <select id="country" name="country" required>
+            <option disabled selected value>-- select an option --</option>
+            <option value="United States">Unites States Of America</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Spain">Spain</option>
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+            <option value="Other">Other</option>
+          </select>
+          <label for="zipCode">Your Zip Code:</label>
+          <input
+            id="zipCode"
+            type="text"
+            placeholder="1000-205"
+            pattern="\d{4}-\d{3}"
+            required
+          />
+          <span></span>
+          <label for="password">Your Password:</label>
+          <input
+            id="password"
+            type="password"
+            pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
+            required
+          />
+          <span></span>
+          <label for="passwordConfirmation"> Confirm Your Password:</label>
+          <input
+            id="passwordConfirmation"
+            type="password"
+            pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
+            required
+          />
+          <span></span>
+          <button type="submit">Submit</button>
+          <span></span>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
